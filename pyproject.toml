@@ -1,0 +1,25 @@
+[project]
+name = "student"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "bhanu0240", email = "bhanureddy0240@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.20.1",
+    "fastapi>=0.162.0",
+    "psycopg[binary]>=3.3.6",
+    "pydantic>=2.14.2",
+    "pydantic-settings>=2.16.2",
+    "sqlalchemy>=2.1.6",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+student = "student:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
