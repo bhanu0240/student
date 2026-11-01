@@ -11,7 +11,8 @@ from sqlalchemy.orm import Session
 
 from student.database import get_db
 from student.models.base import Base
-from student.models.student import Student, StudentRecord, StudentResponse
+from student.models.student import StudentRecord
+from student.schemas.student import Student, StudentResponse
 
 
 class Settings(BaseSettings):
